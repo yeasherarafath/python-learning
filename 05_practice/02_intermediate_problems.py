@@ -5,6 +5,8 @@ This module contains intermediate practice problems with solutions.
 Try to solve each problem before looking at the solution!
 """
 
+import string
+
 # ============================================================================
 # PROBLEM 1: Two Sum
 # ============================================================================
@@ -383,7 +385,6 @@ def word_frequency(text):
         Dictionary with word counts
     """
     # Remove punctuation and convert to lowercase
-    import string
     clean_text = text.lower()
     for char in string.punctuation:
         clean_text = clean_text.replace(char, "")
